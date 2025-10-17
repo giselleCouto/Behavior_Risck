@@ -16,11 +16,6 @@ venv/
 .venv/
 ENV/
 env/
-.env
-
-# Jupyter Notebook
-.ipynb_checkpoints/
-*.ipynb
 
 # IDEs
 .vscode/
@@ -34,42 +29,27 @@ Thumbs.db
 # Logs
 *.log
 
-# Data files (grandes)
-*.csv
-*.parquet
-*.xlsx
-*.xls
-
-# Modelos (podem ser grandes)
-*.pkl
-*.npy
-*.h5
-*.joblib
-
-# Compiled files
-*.pyc
+# Temporários
+*.tmp
+*.bak
+~$*
 
 # OS
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# Temporários
-*.tmp
-*.bak
-~$*
-
-# Reports
-*.html
-*.pdf
-
-# Docker
+# Docker local
 .env.local
-
-# Git
-.git/
+deploy/.env
 
 # Backups
 backups/
 *.tar.gz
 
+# Git
+.git/
+
+# Arquivos temporários do Office
+~$*.xlsx
+~$*.docx

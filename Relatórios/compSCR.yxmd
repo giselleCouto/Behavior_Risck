@@ -1,0 +1,472 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="138" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>relatorio_prob_inad_test.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="sexo" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="idade" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="estado_civil" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="nacionalidade" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="tempo_relacionamento_kredilig_meses" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="situacao_conta" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="canal_origem" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="limite_total" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="limite_total_utilizado" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="data_ultima_alteracao_limite" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="media_meses_entre_contratos_combinado" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="qtd_contratos_fechado_regular" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="qtd_reneg_aberto_regular" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="valor_da_parcela_aberto" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="principal_total_fechado" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="qtd_parcelas_pagas" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="media_atraso_dias" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="meses_ultimo_pagamento" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="meses_entre_primeiro_e_ultimo_pagamento" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="meses_entre_primeiro_e_ultimo_fechamento" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="valor_pago_nr" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="valor_principal_total_nr" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="FIN_valor_medio_entrada_nr" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="renda_valida_new" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="produtos" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="qtd_total_fechado_a_vista" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="mean_dias_maior_atraso" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="qtd_contratos" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="limite_total_primeiro_mes" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="limite_total_ultimo_mes" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="ocupacao" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="grau_escolaridade_cat" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="regiao" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="tipo_cal_entre_contratos" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="tipo_valor_entrada" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="mean_atraso_possui_info" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="possui_contratos_a_vista" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="principal_total" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="cpf_cnpj" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="inad_e_reneg" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="fx_renda_valida" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="fx_principal_total_nr" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="fx_principal_total" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="fx_ult_limite" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="Cluster" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="PD" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="inad_e_reneg_prev" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="Modelo" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="rotulo_predito_base" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="Z" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="SCR" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Modelos\fx_SCR" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="fx_PD" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+            <Field name="fx_SCR" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="138" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>relatorio_prob_inad_test_2.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="sexo" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="idade" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="estado_civil" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="nacionalidade" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="tempo_relacionamento_kredilig_meses" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="situacao_conta" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="canal_origem" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="limite_total" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="limite_total_utilizado" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="data_ultima_alteracao_limite" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="media_meses_entre_contratos_combinado" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="qtd_contratos_fechado_regular" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="qtd_reneg_aberto_regular" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="valor_da_parcela_aberto" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="principal_total_fechado" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="qtd_parcelas_pagas" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="media_atraso_dias" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="meses_ultimo_pagamento" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="meses_entre_primeiro_e_ultimo_pagamento" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="meses_entre_primeiro_e_ultimo_fechamento" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="valor_pago_nr" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="valor_principal_total_nr" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="FIN_valor_medio_entrada_nr" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="renda_valida_new" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="produtos" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="qtd_total_fechado_a_vista" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="mean_dias_maior_atraso" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="qtd_contratos" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="limite_total_primeiro_mes" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="limite_total_ultimo_mes" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="ocupacao" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="grau_escolaridade_cat" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="regiao" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="tipo_cal_entre_contratos" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="tipo_valor_entrada" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="mean_atraso_possui_info" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="possui_contratos_a_vista" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="principal_total" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="cpf_cnpj" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="inad_e_reneg" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="fx_renda_valida" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="fx_principal_total_nr" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="fx_principal_total" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="fx_ult_limite" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="Cluster" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="PD" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="inad_e_reneg_prev" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="Modelo" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="rotulo_predito_base" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="Z" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="SCR" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="fx_SCR" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+            <Field name="fx_PD" size="254" source="File: C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\Desenvolvimento\relatorio_prob_inad_test_2.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="210" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="cpf_cnpj" selected="True" />
+            <SelectField field="SCR" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="222" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="cpf_cnpj" selected="True" />
+            <SelectField field="SCR" selected="True" rename="SCR_modelo_sem_limite" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="354" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>cpf_cnpj</FieldFind>
+          <FieldSearch>cpf_cnpj</FieldSearch>
+          <ReplaceFoundField>SCR</ReplaceFoundField>
+          <FindMode>FindWhole</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields>
+            <Field field="SCR_modelo_sem_limite" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="678" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\fernando.monteiro\deep-torch-example\KAB\Behavior_KAB\compSCR_modelo_atual_modelo_sem_limite.xlsx|||Planilha1</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <SuppressBlankFile>False</SuppressBlankFile>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>compSCR_modelo_atual_modelo_sem_limite.xlsx
+Query=Planilha1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="546" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="(([SCR_modelo_sem_limite]/[SCR])-1)*100" field=" %_variação" size="4" type="Float" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[ %_variação = (([SCR_modelo_sem_limite]/[SCR])-1)*100
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="450" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="SCR" selected="True" type="Double" size="8" />
+            <SelectField field="SCR_modelo_sem_limite" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="654" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&gt;</Operator>
+            <Field><![CDATA[ %_variação]]></Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2025-09-23 20:41:47</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>50</Operand>
+              <StartDate>2025-09-23 20:41:47</StartDate>
+              <EndDate>2025-09-23 20:41:47</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[ %_variação] &gt; 50</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="654" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&lt;</Operator>
+            <Field><![CDATA[ %_variação]]></Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2025-09-23 20:42:13</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>-50</Operand>
+              <StartDate>2025-09-23 20:42:13</StartDate>
+              <EndDate>2025-09-23 20:42:13</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[ %_variação] &lt; -50</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>compSCR</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="bddf92a5-2560-4d30-87a1-b696b3f722d8" />
+      <Telemetry>
+        <PreviousWorkflowId value="c508409c-0642-4704-b13d-af1da2320b19" />
+        <OriginWorkflowId value="c508409c-0642-4704-b13d-af1da2320b19" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

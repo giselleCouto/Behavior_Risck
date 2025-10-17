@@ -1,0 +1,13 @@
+services:
+  behavior_app:
+    build: .
+    container_name: behavior_app
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/Behavior_KAB/Monitoramento  # mapeia toda a pasta local para dentro do container
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+
+#docker compose up --build
