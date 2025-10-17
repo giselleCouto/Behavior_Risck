@@ -1,0 +1,92 @@
+version: '3.8'
+
+services:
+  # API de Predição do Modelo
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: behavior_api
+    restart: unless-stopped
+    ports:
+      - "${API_PORT:-8000}:8000"
+    volumes:
+      # Monta pasta de modelos (somente leitura)
+      - ../Modelos:/app/Modelos:ro
+      - ../POLÍTICAS_BEHAVIOR.xlsx:/app/POLÍTICAS_BEHAVIOR.xlsx:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+    networks:
+      - behavior_network
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Dashboard Streamlit
+  dashboard:
+    build:
+      context: ./dashboard
+      dockerfile: Dockerfile
+    container_name: behavior_dashboard
+    restart: unless-stopped
+    ports:
+      - "${DASHBOARD_PORT:-8501}:8501"
+    volumes:
+      # Monta pasta com relatórios (somente leitura)
+      - ../202507:/app/data/202507:ro
+      - ./dashboard/uploaded_data:/app/data/uploaded:rw
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - behavior_network
+    depends_on:
+      - api
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Nginx como Reverse Proxy (opcional)
+  nginx:
+    image: nginx:alpine
+    container_name: behavior_nginx
+    restart: unless-stopped
+    ports:
+      - "${NGINX_PORT:-80}:80"
+      - "${NGINX_SSL_PORT:-443}:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    networks:
+      - behavior_network
+    depends_on:
+      - api
+      - dashboard
+    profiles:
+      - with-nginx
+
+networks:
+  behavior_network:
+    driver: bridge
+
+# Comando para iniciar:
+# docker-compose up -d
+#
+# Comando para iniciar com nginx:
+# docker-compose --profile with-nginx up -d
+#
+# Comando para parar:
+# docker-compose down
+#
+# Comando para ver logs:
+# docker-compose logs -f
+#
+# Comando para rebuild:
+# docker-compose up -d --build
+

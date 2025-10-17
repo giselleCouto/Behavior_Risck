@@ -1,0 +1,12 @@
+# Dashboard Requirements
+streamlit==1.49.1
+pandas==1.5.3
+numpy==1.26.4
+matplotlib==3.9.2
+seaborn==0.13.2
+plotly==5.24.1
+altair==5.5.0
+openpyxl==3.1.5
+pyarrow==21.0.0
+python-dateutil==2.9.0.post0
+

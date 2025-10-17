@@ -1,0 +1,75 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+env/
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Data files (grandes)
+*.csv
+*.parquet
+*.xlsx
+*.xls
+
+# Modelos (podem ser grandes)
+*.pkl
+*.npy
+*.h5
+*.joblib
+
+# Compiled files
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporários
+*.tmp
+*.bak
+~$*
+
+# Reports
+*.html
+*.pdf
+
+# Docker
+.env.local
+
+# Git
+.git/
+
+# Backups
+backups/
+*.tar.gz
+
