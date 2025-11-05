@@ -11,8 +11,17 @@ class PredictionRequest(BaseModel):
     cpf_cnpj: str = Field(..., description="CPF/CNPJ do cliente")
     idade: int = Field(..., ge=18, le=120, description="Idade do cliente")
     renda_valida_new: float = Field(..., ge=0, description="Renda válida do cliente")
+    renda_comprometida: float = Field(..., ge=0, description="Percentual de renda comprometida")
     tempo_relacionamento_kredilig_meses: int = Field(..., ge=0, description="Tempo de relacionamento em meses")
-    
+    media_meses_entre_contratos_combinado: float = Field(..., ge=0, description="Média combinada de meses entre contratos")
+    meses_ultimo_pagamento: float = Field(..., ge=0, description="Meses desde o último pagamento")
+
+    sexo: str = Field(..., description="Sexo do cliente (M/F)")
+    estado_civil: str = Field(..., description="Estado civil do cliente")
+    nacionalidade: str = Field(..., description="Nacionalidade do cliente")
+    grau_escolaridade_cat: Optional[str] = Field(default=None, description="Categoria de escolaridade consolidada")
+    natureza_ocupacao: str = Field(..., description="Natureza da ocupação original")
+
     # Informações de contratos
     qtd_contratos: int = Field(default=0, ge=0, description="Quantidade total de contratos")
     qtd_contratos_nr: int = Field(default=0, ge=0, description="Quantidade de contratos não renegociados")
@@ -29,7 +38,8 @@ class PredictionRequest(BaseModel):
     valor_principal_total_nr: float = Field(default=0.0, ge=0, description="Valor principal total não renegociado")
     principal_total: float = Field(default=0.0, ge=0, description="Principal total")
     limite_total: float = Field(default=0.0, ge=0, description="Limite total atual")
-    
+    limite_total_ultimo_mes: Optional[float] = Field(default=None, ge=0, description="Limite total observado no último mês")
+
     # Informações de parcelas
     qtd_parcelas_pagas: int = Field(default=0, ge=0, description="Quantidade de parcelas pagas")
     qtd_parcelas_pagas_nr: int = Field(default=0, ge=0, description="Quantidade de parcelas pagas não renegociadas")
@@ -42,30 +52,44 @@ class PredictionRequest(BaseModel):
     freq_atraso: float = Field(default=0.0, ge=0, description="Frequência de atraso")
     
     # Informações categóricas
-    ocupacao: Optional[str] = Field(default=None, description="Ocupação do cliente")
+    ocupacao: Optional[str] = Field(default=None, description="Ocupação consolidada do cliente")
     canal_origem: Optional[str] = Field(default=None, description="Canal de origem")
     produtos: Optional[str] = Field(default=None, description="Produtos contratados")
+    regiao: str = Field(..., description="Região de atendimento do cliente")
+    tipo_valor_entrada: Optional[str] = Field(default=None, description="Classificação do valor de entrada")
     possui_contratos_a_vista: Optional[str] = Field(default="NAO", description="Possui contratos à vista")
-    
+
     class Config:
         schema_extra = {
             "example": {
                 "cpf_cnpj": "12345678900",
                 "idade": 35,
+                "sexo": "F",
+                "estado_civil": "CASADO",
+                "nacionalidade": "BRASILEIRO",
+                "grau_escolaridade_cat": "ENSINO_MEDIO",
+                "natureza_ocupacao": "EMPREGADO SETOR PRIVADO,EXCETO INSTITUICAO FINANC",
                 "renda_valida_new": 3000.0,
+                "renda_comprometida": 12.5,
                 "tempo_relacionamento_kredilig_meses": 24,
+                "media_meses_entre_contratos_combinado": 8.2,
+                "meses_ultimo_pagamento": 2.0,
                 "qtd_contratos": 5,
                 "qtd_contratos_nr": 4,
                 "dias_maior_atraso": 15,
                 "dias_maior_atraso_aberto": 0,
+                "media_atraso_dias": 3.5,
                 "valor_pago_nr": 5000.0,
                 "valor_principal_total_nr": 8000.0,
                 "indice_instabilidade": 12.5,
                 "indice_regularidade": 0.85,
                 "reneg_vs_liq_ratio_ponderado": 0.2,
-                "ocupacao": "EMPREGADO_PRIVADO",
+                "ocupacao": "EMPREGADO_PRIVADO_AUTONOMO",
                 "canal_origem": "Fisico",
-                "produtos": "EMPRESTIMO"
+                "produtos": "EMPRESTIMO",
+                "regiao": "Grande Florianópolis",
+                "tipo_valor_entrada": "Paga_entrada",
+                "possui_contratos_a_vista": "NAO"
             }
         }
 

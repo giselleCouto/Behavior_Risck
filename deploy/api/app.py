@@ -8,7 +8,7 @@ import logging
 from typing import List, Dict, Any
 from datetime import datetime
 
-from model_service import BehaviorScoreModel
+from model_service import BehaviorScoreModel, DataValidationError
 from schemas import PredictionRequest, PredictionResponse, HealthResponse, BatchPredictionRequest
 
 # Configuração de logging
@@ -122,7 +122,7 @@ async def predict(request: PredictionRequest):
         
         return PredictionResponse(**prediction)
         
-    except ValueError as e:
+    except DataValidationError as e:
         logger.error(f"Erro de validação: {str(e)}")
         raise HTTPException(
             status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
@@ -163,6 +163,13 @@ async def predict_batch(request: BatchPredictionRequest):
                 input_data = client.dict()
                 prediction = model_service.predict(input_data)
                 results.append(prediction)
+            except DataValidationError as e:
+                logger.error(f"Erro de validação no cliente {idx}: {str(e)}")
+                errors.append({
+                    "index": idx,
+                    "cpf_cnpj": client.cpf_cnpj,
+                    "error": str(e)
+                })
             except Exception as e:
                 logger.error(f"Erro na predição do cliente {idx}: {str(e)}")
                 errors.append({
@@ -197,11 +204,30 @@ async def model_info():
                 status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
                 detail="Modelo não está disponível"
             )
-        
+
         return model_service.get_model_info()
-        
+
     except Exception as e:
         logger.error(f"Erro ao obter informações do modelo: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=str(e)
+        )
+
+
+@app.get("/model/retraining-status", tags=["Model"])
+async def retraining_status():
+    """Informa se há retreinamento automático configurado para o modelo."""
+    try:
+        if model_service is None:
+            raise HTTPException(
+                status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+                detail="Modelo não está disponível"
+            )
+
+        return model_service.retraining_status()
+    except Exception as e:
+        logger.error(f"Erro ao consultar status de retreinamento: {str(e)}")
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=str(e)
