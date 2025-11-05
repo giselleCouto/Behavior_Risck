@@ -842,7 +842,7 @@ with aba:
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
         )
 
-with aba1:
+with tab_eda:
     st.title("Análise Exploratória (EDA)")
     # ==============================
     # Distribuição das variáveis
@@ -1016,7 +1016,7 @@ with aba11:
             mime="text/csv",
         )
 
-with aba2:
+with tab_relatorio:
     st.title("Relatório")
     # ==============================
     # Relatório
@@ -1114,7 +1114,7 @@ with aba2:
             else:
                 st.write(''' Digite o CPF para visualizar relatório SHAP.''')
 
-with aba3:
+with tab_indicadores:
     st.title("Indicadores")
     # ==============================
     # Indicadores
@@ -1141,4 +1141,3 @@ with aba3:
         ax.grid(True)
         plt.xticks(rotation=45)
         st.pyplot(fig)
-

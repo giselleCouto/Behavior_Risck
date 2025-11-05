@@ -45,7 +45,7 @@ class BehaviorScoreModel:
             model_path: Caminho para a pasta com os modelos
         """
         self.model_path = Path(model_path)
-        self.preprocessors = {}
+        self.preprocessors: Dict[str, Any] = {}
         self.models = {}
         self.bins = {}
         self.policies = None
@@ -144,6 +144,7 @@ class BehaviorScoreModel:
             self.preprocessors['imputer_num'] = self._load_joblib(preproc_path / "imputer_num.pkl")
             self.preprocessors['imputer_num_median'] = self._load_joblib(preproc_path / "imputer_num_median.pkl")
             self.preprocessors['imputer_parametros'] = self._load_imputer_parameters(preproc_path / "imputer_parametros.pkl")
+            self.preprocessors['imputer_parametros'] = self._load_joblib(preproc_path / "imputer_parametros.pkl")
             self.preprocessors['scaler_num'] = self._load_joblib(preproc_path / "scaler_num.pkl")
             
             logger.info("Carregando modelos de ML...")
@@ -756,14 +757,14 @@ class BehaviorScoreModel:
             decision = self._apply_policies(pd_value, faixa_risco, data)
             
             return {
-                "cpf_cnpj": data.get("cpf_cnpj"),
-                "score": score,
-                "pd": round(pd_value, 4),
-                "faixa_risco": faixa_risco,
-                "limite_sugerido": limite_sugerido,
-                "decisao": decision["action"],
-                "motivo": decision["reason"],
-                "timestamp": pd.Timestamp.now().isoformat()
+                "cpf_cnpj": row.get("cpf_cnpj"),
+                "score": int(row.get("score", 0)),
+                "pd": round(float(row.get("pd", 0.0)), 4),
+                "faixa_risco": row.get("faixa_risco"),
+                "limite_sugerido": float(row.get("limite_sugerido", 0.0)),
+                "decisao": row.get("decisao"),
+                "motivo": row.get("motivo"),
+                "timestamp": row.get("timestamp"),
             }
             
         except Exception as e:
